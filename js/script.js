@@ -943,7 +943,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
 document.addEventListener("DOMContentLoaded", () => {
     const botonReiniciar = document.getElementById("btn-reiniciar-sistema");
 
