@@ -29,8 +29,6 @@ const formulario = document.getElementById("formContacto");
 
 
 
-
-
     document.addEventListener("DOMContentLoaded", () => {
     const selectProducto = document.getElementById("select-producto");
     const inputCantidad = document.getElementById("input-cantidad");
@@ -99,6 +97,7 @@ const formulario = document.getElementById("formContacto");
         });
     }
 });
+
 
 
 
