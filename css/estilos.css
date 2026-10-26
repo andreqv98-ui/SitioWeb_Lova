@@ -912,14 +912,14 @@ button:hover {
     margin-bottom: 10px;
 }
 
-/* Texto descriptivo */
+
 .descripcion-inventario {
     color: #bfaec7;
     line-height: 1.7;
     margin-bottom: 20px;
 }
 
-/* Adaptación para pantallas pequeñas */
+
 @media (max-width: 768px) {
     .tabla-inventario th,
     .tabla-inventario td {
@@ -933,7 +933,7 @@ button:hover {
 }
 
 
-/* Centrar la sección del inventario */
+
 .tabla-inventario-contenedor {
     width: 90%;
     max-width: 1200px;
@@ -945,13 +945,13 @@ button:hover {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 }
 
-/* Centrar el título y la descripción */
+
 .titulo-inventario,
 .descripcion-inventario {
     text-align: center;
 }
 
-/* Centrar la tabla dentro del contenedor */
+
 .tabla-inventario {
     width: 100%;
     margin: 0 auto;
@@ -975,7 +975,7 @@ button:hover {
 }
 
 
-/* ===== PROTOTIPO DE LOVASTOCK ===== */
+
 
 .prototipo {
     max-width: 1200px;
@@ -1032,7 +1032,7 @@ button:hover {
     margin: 15px 0 5px;
 }
 
-/* Adaptación para celulares */
+
 @media (max-width: 700px) {
     .galeria-prototipo {
         grid-template-columns: 1fr;
