@@ -1,32 +1,29 @@
-/* ==========================================
-   1. PALETA NOCTURNA Y ELEGANTE (SEX SHOP)
-   ================================---------- */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #0f0a12; /* Fondo general negro/morado muy oscuro y sofisticado */
+    background-color: #0f0a12; 
     color: #e6e1e8;
 }
 
 header {
     text-align: center;
     padding: 35px 20px;
-    background: linear-gradient(135deg, #1f0c24, #2d1236); /* Degradado oscuro de lujo */
-    border-bottom: 3px solid #ff2a85; /* Línea fucsia vibrante de alto contraste */
+    background: linear-gradient(135deg, #1f0c24, #2d1236); 
+    border-bottom: 3px solid #ff2a85; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
 header h1 {
     margin: 0;
     font-size: 38px;
-    color: #ffffff; /* Blanco puro para máxima elegancia */
+    color: #ffffff; 
     letter-spacing: 3px;
     text-shadow: 0 2px 10px rgba(255, 42, 133, 0.4);
 }
 
 header p {
     font-size: 16px;
-    color: #f0a5d4; /* Rosado neón suave */
+    color: #f0a5d4; 
     margin-top: 8px;
     font-weight: 500;
 }
@@ -41,7 +38,7 @@ header p {
     box-shadow: 0 0 15px rgba(255, 42, 133, 0.4);
 }
 
-/* Barra de Navegación Principal (Negro y Fucsia) */
+
 nav {
     display: flex;
     justify-content: center;
@@ -59,7 +56,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ff2a85; /* Destello fucsia al pasar el mouse */
+    color: #ff2a85; 
 }
 
 main {
@@ -68,7 +65,7 @@ main {
 
 h2 {
     text-align: center;
-    color: #ff2a85; /* Títulos en rosa vibrante */
+    color: #ff2a85;
     letter-spacing: 1px;
 }
 
@@ -82,9 +79,7 @@ footer {
     border-top: 1px solid #3a1e4a;
 }
 
-/* ==========================================
-   2. PÁGINA DE INICIO (INDEX)
-   ================================---------- */
+
 .bienvenida {
     text-align: center;
     margin-bottom: 40px;
@@ -118,14 +113,12 @@ footer {
     margin-top: 20px;
 }
 
-/* ==========================================
-   3. TARJETAS DE PRODUCTOS Y SECCIONES (OSCURAS Y DE LUJO)
-   ================================---------- */
+
 .producto, .destacado, .tarjeta-mv, .tarjeta-funcion, .seccion-bloque {
-    background-color: #16101c; /* Fondo de tarjeta oscuro elegante */
+    background-color: #16101c; 
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
-    border: 1px solid #3a1e4a; /* Bordes morados sutiles */
+    border: 1px solid #3a1e4a; 
     color: #e6e1e8;
     transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
@@ -133,12 +126,10 @@ footer {
 .producto:hover, .destacado:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(255, 42, 133, 0.25);
-    border-color: #ff2a85; /* Se ilumina en fucsia al pasar el mouse */
+    border-color: #ff2a85; 
 }
 
-/* ==========================================
-   4. PÁGINA DE PRODUCTOS
-   ================================---------- */
+
 .productos {
     display: flex;
     gap: 20px;
@@ -186,9 +177,6 @@ footer {
     justify-content: space-between;
 }
 
-/* ==========================================
-   5. PÁGINA DE NOSOTROS
-   ================================---------- */
 .nosotros-container {
     max-width: 1000px;
     margin: 40px auto;
