@@ -682,8 +682,6 @@ button:hover {
 }
 
 
-
-
 .cantidad-modal {
     position: fixed;
     inset: 0;
@@ -816,8 +814,6 @@ button:hover {
 }
 
 
-
-
 .tabla-inventario-contenedor {
     width: 100%;
     overflow-x: auto;
@@ -933,7 +929,6 @@ button:hover {
 }
 
 
-
 .tabla-inventario-contenedor {
     width: 90%;
     max-width: 1200px;
@@ -957,7 +952,6 @@ button:hover {
     margin: 0 auto;
     border-collapse: collapse;
 }
-
 
 
 .confirmacion-edad {
