@@ -980,3 +980,48 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const enlaceSesion = document.getElementById("enlace-sesion");
+
+    if (!enlaceSesion) return;
+
+    function actualizarEnlaceSesion() {
+        const sesionActiva =
+            localStorage.getItem("sesionLova") === "activo";
+
+        if (sesionActiva) {
+            enlaceSesion.textContent = "Cerrar sesión";
+            enlaceSesion.href = "#";
+            enlaceSesion.setAttribute("aria-label", "Cerrar sesión");
+        } else {
+            enlaceSesion.textContent = "Iniciar sesión";
+            enlaceSesion.href = "login.html";
+            enlaceSesion.setAttribute("aria-label", "Iniciar sesión");
+        }
+    }
+
+    actualizarEnlaceSesion();
+
+    enlaceSesion.addEventListener("click", (evento) => {
+        const sesionActiva =
+            localStorage.getItem("sesionLova") === "activo";
+
+        if (sesionActiva) {
+            evento.preventDefault();
+
+            const confirmar = confirm(
+                "¿Estás segura de que querés cerrar sesión?"
+            );
+
+            if (!confirmar) return;
+
+            localStorage.removeItem("sesionLova");
+
+            alert("Has cerrado sesión en Lova.");
+
+            window.location.href = "login.html";
+        }
+    });
+});
