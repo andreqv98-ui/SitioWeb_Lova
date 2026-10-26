@@ -265,9 +265,7 @@ footer {
     font-size: 13px;
 }
 
-/* ==========================================
-   6. PÁGINA DE SISTEMA (LOVASTOCK)
-   ================================---------- */
+
 .sistema-container {
     max-width: 1000px;
     margin: 40px auto;
@@ -336,9 +334,7 @@ footer {
     border: 1px solid #3a1e4a;
 }
 
-/* ==========================================
-   7. PÁGINA DE CONTACTO Y FORMULARIOS
-   ================================---------- */
+
 .contacto-container {
     max-width: 800px;
     margin: 40px auto;
@@ -423,9 +419,7 @@ footer {
     border: 1px solid #3a1e4a;
 }
 
-/* ==========================================
-   8. BOTONES GLOBALES Y RESPONSIVE (MÓVIL)
-   ================================---------- */
+
 button {
     padding: 10px 20px;
     border: none;
@@ -688,9 +682,7 @@ button:hover {
 }
 
 
-/* ==========================================
-   VENTANA PARA ELEGIR CANTIDAD DE PRODUCTOS
-   ========================================== */
+
 
 .cantidad-modal {
     position: fixed;
@@ -824,9 +816,7 @@ button:hover {
 }
 
 
-/* =====================================
-   TABLA DEL SISTEMA DE INVENTARIO LOVA
-===================================== */
+
 
 .tabla-inventario-contenedor {
     width: 100%;
@@ -846,7 +836,7 @@ button:hover {
     text-align: left;
 }
 
-/* Encabezados */
+
 .tabla-inventario thead {
     background: linear-gradient(135deg, #5a1c65, #a51c69);
 }
@@ -861,14 +851,14 @@ button:hover {
     white-space: nowrap;
 }
 
-/* Celdas */
+
 .tabla-inventario td {
     padding: 15px 18px;
     border-bottom: 1px solid #3a1e4a;
     font-size: 14px;
 }
 
-/* Filas alternas */
+
 .tabla-inventario tbody tr:nth-child(even) {
     background: #1f1426;
 }
@@ -877,33 +867,33 @@ button:hover {
     background: #16101c;
 }
 
-/* Efecto al pasar el cursor */
+/
 .tabla-inventario tbody tr:hover {
     background: #30203a;
     transition: background 0.2s ease;
 }
 
-/* Código del producto */
+
 .tabla-inventario td:first-child {
     color: #f0a5d4;
     font-weight: bold;
     white-space: nowrap;
 }
 
-/* Precio */
+
 .tabla-inventario td:nth-child(3) {
     color: #ff9bc7;
     font-weight: bold;
     white-space: nowrap;
 }
 
-/* Existencias */
+
 .tabla-inventario td:nth-child(4) {
     text-align: center;
     font-weight: bold;
 }
 
-/* Estado disponible */
+
 .estado-disponible {
     display: inline-block;
     padding: 6px 11px;
@@ -916,7 +906,7 @@ button:hover {
     white-space: nowrap;
 }
 
-/* Título del inventario */
+
 .titulo-inventario {
     color: #f0a5d4;
     margin-bottom: 10px;
