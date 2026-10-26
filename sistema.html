@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -31,7 +32,7 @@
 
     <main class="sistema-container">
 
-     
+        
         <section class="seccion-bloque">
             <h2>Sistema LovaStock</h2>
 
@@ -44,7 +45,7 @@
             </p>
         </section>
 
-       
+    >
         <section class="seccion-bloque">
             <h3>¿Cuál es su función?</h3>
 
@@ -65,7 +66,6 @@
             </p>
         </section>
 
-       
         <section class="seccion-bloque">
             <h3>¿Quiénes utilizarán el sistema?</h3>
 
@@ -78,8 +78,6 @@
             </p>
         </section>
 
-
-
     
 <button type="button" id="btn-reiniciar-sistema" class="btn-enviar">
     Reiniciar todo el sistema
@@ -88,7 +86,6 @@
 
 
 
-        
         <section class="seccion-bloque">
             <h3>Inventario de productos</h3>
 
@@ -196,6 +193,7 @@
         </section>
 
 
+        
 
 <section class="seccion-bloque">
     <h3>Registrar nuevos productos</h3>
@@ -318,8 +316,9 @@
     </div>
 </section>
 
-
-        
+       
+       
+       
         <section class="seccion-bloque cotizador-seccion">
             <h2>Cotizador LovaStock</h2>
 
@@ -460,8 +459,7 @@
                 </div>
             </div>
 
-            
-
+          
             <div class="btn-ocultar-container">
                 <button type="button"
                     id="btn-toggle-info"
@@ -486,8 +484,76 @@
 
     </main>
 
+   
+    <div id="btn-carrito-flotante" class="carrito-flotante">
+        🛒 <span id="contador-carrito">0</span>
+    </div>
 
-    <section class="prototipo">
+    <div id="modal-carrito"
+        class="carrito-modal"
+        style="display: none;">
+
+        <div class="carrito-contenido">
+
+            <button type="button"
+                id="cerrar-carrito"
+                class="cerrar-modal"
+                aria-label="Cerrar carrito">
+                &times;
+            </button>
+
+            <h3>Tu carrito Lova</h3>
+
+            <div id="lista-carrito-items">
+                <p>El carrito está vacío.</p>
+            </div>
+
+            <div class="carrito-resumen">
+
+                <p>
+                    Subtotal:
+                    <span id="car-subtotal">₡0</span>
+                </p>
+
+                <p>
+                    Descuento:
+                    <span id="car-descuento">₡0</span>
+                </p>
+
+                <p>
+                    IVA (13%):
+                    <span id="car-iva">₡0</span>
+                </p>
+
+                <hr>
+
+                <p class="car-total-final">
+                    Total:
+                    <span id="car-total">₡0</span>
+                </p>
+
+                <div class="carrito-botones">
+                    <button type="button"
+                        id="btn-seguir-comprando"
+                        class="btn-secundario">
+                        Continuar comprando
+                    </button>
+
+                    <button type="button"
+                        id="btn-finalizar-pedido"
+                        class="btn-enviar">
+                        Finalizar pedido
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    
+<!-- PROTOTIPO DE LOVASTOCK -->
+<section class="prototipo">
     <h2>Prototipo del sistema LovaStock</h2>
 
     <div class="galeria-prototipo">

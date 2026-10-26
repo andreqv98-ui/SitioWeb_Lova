@@ -29,7 +29,7 @@
     <main>
         <h2>Nuestros productos</h2>
         
-       
+
         <div class="productos">
 
             <div class="producto">
@@ -45,7 +45,7 @@
                 <h3>Collares y Gargantillas BDSM</h3>
                 <p>Accesorio de cuero, metal o látex para juegos de simbolización pertenencia, entrega o jerarquía.</p>
                 <p>₡12.000</p>
-                <button class="btn-agregar" data-nombre="Collares BDSM" data-precio="12000">Agregar</button>
+                <button class="btn-agregar" data-nombre="Collares y Gargantillas BDSM" data-precio="12000">Agregar</button>
             </div>
 
             <div class="producto">
@@ -114,6 +114,35 @@
 
         </div>
     </main>
+
+    <div id="btn-carrito-flotante" class="carrito-flotante">
+        🛒 <span id="contador-carrito">0</span>
+    </div>
+
+
+    <div id="modal-carrito" class="carrito-modal" style="display: none;">
+        <div class="carrito-contenido">
+            <span id="cerrar-carrito" class="cerrar-modal">&times;</span>
+            <h3>Tu Carrito Lova</h3>
+            
+            <div id="lista-carrito-items">
+                <p>El carrito está vacío.</p>
+            </div>
+            
+            <div class="carrito-resumen">
+                <p>Subtotal: <span id="car-subtotal">₡0</span></p>
+                <p>Descuento: <span id="car-descuento">₡0</span></p>
+                <p>IVA (13%): <span id="car-iva">₡0</span></p>
+                <hr>
+                <p class="car-total-final">Total: <span id="car-total">₡0</span></p>
+                
+                <div class="carrito-botones">
+                    <button id="btn-seguir-comprando" class="btn-secundario">Continuar comprando</button>
+                    <button id="btn-finalizar-pedido" class="btn-enviar">Finalizar Pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <p>Lova © 2026. Todos los derechos reservados.</p>
