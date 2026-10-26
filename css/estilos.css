@@ -1032,7 +1032,6 @@ button:hover {
     margin: 15px 0 5px;
 }
 
-
 @media (max-width: 700px) {
     .galeria-prototipo {
         grid-template-columns: 1fr;
