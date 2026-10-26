@@ -966,6 +966,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
 document.addEventListener("DOMContentLoaded", () => {
     const formulario = document.getElementById("formLogin");
     const confirmacionEdad = document.getElementById("confirmar-edad");
