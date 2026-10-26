@@ -1,29 +1,32 @@
+/* ==========================================
+   1. PALETA NOCTURNA Y ELEGANTE (SEX SHOP)
+   ================================---------- */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #0f0a12; 
+    background-color: #0f0a12; /* Fondo general negro/morado muy oscuro y sofisticado */
     color: #e6e1e8;
 }
 
 header {
     text-align: center;
     padding: 35px 20px;
-    background: linear-gradient(135deg, #1f0c24, #2d1236); 
-    border-bottom: 3px solid #ff2a85; 
+    background: linear-gradient(135deg, #1f0c24, #2d1236); /* Degradado oscuro de lujo */
+    border-bottom: 3px solid #ff2a85; /* Línea fucsia vibrante de alto contraste */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
 header h1 {
     margin: 0;
     font-size: 38px;
-    color: #ffffff; 
+    color: #ffffff; /* Blanco puro para máxima elegancia */
     letter-spacing: 3px;
     text-shadow: 0 2px 10px rgba(255, 42, 133, 0.4);
 }
 
 header p {
     font-size: 16px;
-    color: #f0a5d4; 
+    color: #f0a5d4; /* Rosado neón suave */
     margin-top: 8px;
     font-weight: 500;
 }
@@ -38,7 +41,7 @@ header p {
     box-shadow: 0 0 15px rgba(255, 42, 133, 0.4);
 }
 
-
+/* Barra de Navegación Principal (Negro y Fucsia) */
 nav {
     display: flex;
     justify-content: center;
@@ -56,7 +59,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ff2a85; 
+    color: #ff2a85; /* Destello fucsia al pasar el mouse */
 }
 
 main {
@@ -65,7 +68,7 @@ main {
 
 h2 {
     text-align: center;
-    color: #ff2a85; 
+    color: #ff2a85; /* Títulos en rosa vibrante */
     letter-spacing: 1px;
 }
 
@@ -77,4 +80,992 @@ footer {
     color: #bfaec7;
     font-size: 14px;
     border-top: 1px solid #3a1e4a;
+}
+
+/* ==========================================
+   2. PÁGINA DE INICIO (INDEX)
+   ================================---------- */
+.bienvenida {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.relacionada {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.relacionada img {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+    border: 1px solid #3a1e4a;
+}
+
+.destacados {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contenedor-destacado {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* ==========================================
+   3. TARJETAS DE PRODUCTOS Y SECCIONES (OSCURAS Y DE LUJO)
+   ================================---------- */
+.producto, .destacado, .tarjeta-mv, .tarjeta-funcion, .seccion-bloque {
+    background-color: #16101c; /* Fondo de tarjeta oscuro elegante */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid #3a1e4a; /* Bordes morados sutiles */
+    color: #e6e1e8;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.producto:hover, .destacado:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 42, 133, 0.25);
+    border-color: #ff2a85; /* Se ilumina en fucsia al pasar el mouse */
+}
+
+/* ==========================================
+   4. PÁGINA DE PRODUCTOS
+   ================================---------- */
+.productos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.producto {
+    width: 240px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.producto img, .destacado img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #2d1236;
+}
+
+.producto h3 {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 12px 0 8px 0;
+}
+
+.producto p {
+    font-size: 13px;
+    color: #bfaec7;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.destacado {
+    width: 220px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ==========================================
+   5. PÁGINA DE NOSOTROS
+   ================================---------- */
+.nosotros-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.seccion-bloque {
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.seccion-bloque h2, .seccion-bloque h3 {
+    color: #ff2a85;
+    margin-bottom: 15px;
+}
+
+.seccion-bloque p {
+    line-height: 1.6;
+    color: #bfaec7;
+}
+
+.mision-vision-grid {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.tarjeta-mv {
+    flex: 1;
+    min-width: 280px;
+    padding: 25px;
+    text-align: center;
+    border-top: 4px solid #ff2a85;
+}
+
+.valores-grid {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.valores-grid li {
+    background-color: #1f1426;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 3px solid #ff2a85;
+    font-size: 14px;
+    line-height: 1.5;
+    border-top: 1px solid #3a1e4a;
+    border-right: 1px solid #3a1e4a;
+    border-bottom: 1px solid #3a1e4a;
+    color: #d1cbd5;
+}
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.miembro-tarjeta {
+    background-color: #1f1426;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #3a1e4a;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.miembro-tarjeta strong {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.miembro-tarjeta span {
+    color: #bfaec7;
+    font-size: 13px;
+}
+
+/* ==========================================
+   6. PÁGINA DE SISTEMA (LOVASTOCK)
+   ================================---------- */
+.sistema-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.funciones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tarjeta-funcion {
+    padding: 20px;
+    text-align: left;
+    border-top: 4px solid #ff2a85;
+}
+
+.tarjeta-funcion h4 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.botones-lectura, .control-fecha {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-lectura, #btn-fecha {
+    background-color: #ff2a85;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.btn-lectura:hover, #btn-fecha:hover {
+    background-color: #e01b70;
+}
+
+.beneficios-lista {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 15px auto 0 auto;
+    text-align: left;
+}
+
+.beneficios-lista li {
+    background-color: #1f1426;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border-left: 3px solid #ff2a85;
+    font-size: 14px;
+    color: #d1cbd5;
+    border: 1px solid #3a1e4a;
+}
+
+/* ==========================================
+   7. PÁGINA DE CONTACTO Y FORMULARIOS
+   ================================---------- */
+.contacto-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.campo-grupo label {
+    font-weight: bold;
+    color: #ff2a85;
+    font-size: 14px;
+}
+
+.campo-grupo input,
+.campo-grupo select,
+.campo-grupo textarea {
+    padding: 10px;
+    border: 1px solid #3a1e4a;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #1f1426;
+    color: #ffffff;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.campo-grupo input:focus,
+.campo-grupo select:focus,
+.campo-grupo textarea:focus {
+    border-color: #ff2a85;
+    box-shadow: 0 0 8px rgba(255, 42, 133, 0.4);
+}
+
+.btn-enviar {
+    background-color: #ff2a85;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    align-self: flex-start;
+    margin-top: 5px;
+}
+
+.btn-enviar:hover {
+    background-color: #e01b70;
+}
+
+.info-contacto-lista {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-contacto-lista li {
+    background-color: #1f1426;
+    padding: 12px 15px;
+    border-radius: 6px;
+    border-left: 3px solid #ff2a85;
+    font-size: 14px;
+    color: #d1cbd5;
+    border: 1px solid #3a1e4a;
+}
+
+/* ==========================================
+   8. BOTONES GLOBALES Y RESPONSIVE (MÓVIL)
+   ================================---------- */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff2a85;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    transform: scale(1.03);
+    background-color: #e01b70;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .productos, .contenedor-destacado, .mision-vision-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto, .destacado {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+}
+
+.cotizador-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.preview-card {
+    background-color: #1f1426;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #3a1e4a;
+    text-align: center;
+}
+
+.img-dinamica {
+   width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%; 
+    margin: 0 auto 10px auto;
+    display: block;
+    border: 2px solid #ff2a85;
+    box-shadow: 0 0 12px rgba(255, 42, 133, 0.3);
+}
+
+.detalle-calculo {
+    background-color: #1f1426;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #3a1e4a;
+    margin-top: 15px;
+}
+
+.detalle-calculo p {
+    margin: 8px 0;
+    color: #d1cbd5;
+}
+
+.total-final {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff2a85 !important;
+}
+
+.info-oculta {
+    background-color: #1f1426;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 3px solid #ff2a85;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #d1cbd5;
+}
+
+@media (max-width: 768px) {
+    .cotizador-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.btn-ocultar-container {
+    margin-top: 25px;
+    text-align: center;
+}
+
+#btn-toggle-info {
+    width: 100%;
+    padding: 12px;
+    background-color: #2d1236;
+    border: 1px solid #ff2a85;
+    color: #ff2a85;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#btn-toggle-info:hover {
+    background-color: #ff2a85;
+    color: #ffffff;
+}
+
+
+.carrito-flotante {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #ff2a85;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(255, 42, 133, 0.5);
+    z-index: 1000;
+    transition: transform 0.2s;
+}
+
+.carrito-flotante:hover {
+    transform: scale(1.1);
+}
+
+#contador-carrito {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ffffff;
+    color: #ff2a85;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    border: 2px solid #ff2a85;
+}
+
+.carrito-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1100;
+}
+
+.carrito-contenido {
+    background-color: #16101c;
+    border: 2px solid #ff2a85;
+    padding: 25px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    color: #e6e1e8;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.cerrar-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    color: #ff2a85;
+    cursor: pointer;
+}
+
+.carrito-item-fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f1426;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    border: 1px solid #3a1e4a;
+}
+
+.btn-quitar {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.carrito-resumen {
+    margin-top: 15px;
+    border-top: 1px solid #3a1e4a;
+    padding-top: 10px;
+}
+
+.carrito-resumen p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #d1cbd5;
+}
+
+.car-total-final {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff2a85 !important;
+}
+
+.carrito-botones {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.carrito-botones button {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.btn-secundario {
+    background-color: transparent;
+    border: 1px solid #ff2a85;
+    color: #ff2a85;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-secundario:hover {
+    background-color: #ff2a85;
+    color: #ffffff;
+}
+
+
+/* ==========================================
+   VENTANA PARA ELEGIR CANTIDAD DE PRODUCTOS
+   ========================================== */
+
+.cantidad-modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 2000;
+}
+
+.cantidad-contenido {
+    width: 100%;
+    max-width: 380px;
+    padding: 28px;
+    background: linear-gradient(145deg, #1f0c24, #16101c);
+    border: 2px solid #ff2a85;
+    border-radius: 14px;
+    box-shadow: 0 10px 35px rgba(255, 42, 133, 0.2);
+    color: #e6e1e8;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.cantidad-contenido h3 {
+    color: #ff2a85;
+    margin: 0 25px 12px;
+    font-size: 21px;
+}
+
+.cantidad-nombre {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.cantidad-precio {
+    color: #f0a5d4;
+    margin-bottom: 20px;
+}
+
+.cantidad-etiqueta {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #d1cbd5;
+}
+
+.cantidad-contenido input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #71365f;
+    border-radius: 8px;
+    background-color: #0f0a12;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+}
+
+.cantidad-contenido input:focus {
+    border-color: #ff2a85;
+    box-shadow: 0 0 8px rgba(255, 42, 133, 0.3);
+}
+
+.cantidad-disponible {
+    color: #bfaec7;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.cantidad-subtotal {
+    background-color: #2d1236;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #3a1e4a;
+}
+
+.cantidad-subtotal strong {
+    color: #ff2a85;
+    font-size: 20px;
+}
+
+.cantidad-acciones {
+    display: flex;
+    gap: 10px;
+}
+
+.cantidad-acciones button {
+    flex: 1;
+}
+
+.cantidad-cancelar {
+    background-color: transparent;
+    color: #ff2a85;
+    border: 1px solid #ff2a85;
+}
+
+.cantidad-cancelar:hover {
+    background-color: #2d1236;
+}
+
+.cantidad-cerrar {
+    position: absolute;
+    top: 10px;
+    right: 13px;
+    background: transparent;
+    color: #ff2a85;
+    padding: 4px 8px;
+    font-size: 23px;
+}
+
+.cantidad-cerrar:hover {
+    background-color: #2d1236;
+    transform: none;
+}
+
+@media (max-width: 480px) {
+    .cantidad-contenido {
+        padding: 24px 18px;
+    }
+
+    .cantidad-acciones {
+        flex-direction: column;
+    }
+}
+
+
+/* =====================================
+   TABLA DEL SISTEMA DE INVENTARIO LOVA
+===================================== */
+
+.tabla-inventario-contenedor {
+    width: 100%;
+    overflow-x: auto;
+    margin: 25px 0;
+    border: 1px solid #3a1e4a;
+    border-radius: 14px;
+    background: #16101c;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.tabla-inventario {
+    width: 100%;
+    min-width: 750px;
+    border-collapse: collapse;
+    color: #e6e1e8;
+    text-align: left;
+}
+
+/* Encabezados */
+.tabla-inventario thead {
+    background: linear-gradient(135deg, #5a1c65, #a51c69);
+}
+
+.tabla-inventario th {
+    padding: 16px 18px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+/* Celdas */
+.tabla-inventario td {
+    padding: 15px 18px;
+    border-bottom: 1px solid #3a1e4a;
+    font-size: 14px;
+}
+
+/* Filas alternas */
+.tabla-inventario tbody tr:nth-child(even) {
+    background: #1f1426;
+}
+
+.tabla-inventario tbody tr:nth-child(odd) {
+    background: #16101c;
+}
+
+/* Efecto al pasar el cursor */
+.tabla-inventario tbody tr:hover {
+    background: #30203a;
+    transition: background 0.2s ease;
+}
+
+/* Código del producto */
+.tabla-inventario td:first-child {
+    color: #f0a5d4;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Precio */
+.tabla-inventario td:nth-child(3) {
+    color: #ff9bc7;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Existencias */
+.tabla-inventario td:nth-child(4) {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estado disponible */
+.estado-disponible {
+    display: inline-block;
+    padding: 6px 11px;
+    border-radius: 20px;
+    background: rgba(46, 204, 113, 0.12);
+    color: #75e6a0;
+    border: 1px solid rgba(117, 230, 160, 0.3);
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Título del inventario */
+.titulo-inventario {
+    color: #f0a5d4;
+    margin-bottom: 10px;
+}
+
+/* Texto descriptivo */
+.descripcion-inventario {
+    color: #bfaec7;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+    .tabla-inventario th,
+    .tabla-inventario td {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .tabla-inventario-contenedor {
+        margin: 18px 0;
+    }
+}
+
+
+/* Centrar la sección del inventario */
+.tabla-inventario-contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
+    overflow-x: auto;
+    border: 1px solid #3a1e4a;
+    border-radius: 14px;
+    background: #16101c;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Centrar el título y la descripción */
+.titulo-inventario,
+.descripcion-inventario {
+    text-align: center;
+}
+
+/* Centrar la tabla dentro del contenedor */
+.tabla-inventario {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+
+
+.confirmacion-edad {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.confirmacion-edad input {
+    accent-color: #ff2a85;
+    cursor: pointer;
+}
+
+
+/* ===== PROTOTIPO DE LOVASTOCK ===== */
+
+.prototipo {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.prototipo h2 {
+    color: #e8a0bf;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.prototipo > p {
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.galeria-prototipo {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.pantalla-prototipo {
+    background-color: #211a29;
+    border: 1px solid #654565;
+    border-radius: 12px;
+    padding: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.pantalla-prototipo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(232, 160, 191, 0.15);
+}
+
+.pantalla-prototipo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #403047;
+}
+
+.pantalla-prototipo h3 {
+    color: #f2c6d4;
+    font-size: 17px;
+    margin: 15px 0 5px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 700px) {
+    .galeria-prototipo {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .prototipo h2 {
+        font-size: 24px;
+    }
+
+    .prototipo {
+        padding: 20px 15px;
+    }
 }
