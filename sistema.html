@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lova - Sistema LovaStock</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="Logo">
+                <img src="img/Logo.jpeg" alt="Logo de Lova">
+                <h1>LOVA</h1>
+                <p>Tu bienestar íntimo, con la discreción y confianza que mereces</p>
+            </div>
+        </nav>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="productos.html">Productos</a>
+        <a href="sistema.html">Sistema</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main class="sistema-container">
+
+     
+        <section class="seccion-bloque">
+            <h2>Sistema LovaStock</h2>
+
+            <p class="descripcion-sistema">
+                LovaStock es una propuesta de sistema diseñada para
+                mejorar el control del inventario de la empresa Lova.
+                Su objetivo es mantener actualizada la disponibilidad
+                de los productos en la página web y reducir los errores
+                ocasionados por el registro manual de las existencias.
+            </p>
+        </section>
+
+       
+        <section class="seccion-bloque">
+            <h3>¿Cuál es su función?</h3>
+
+            <p>
+                El sistema busca solucionar el problema de mantener
+                desactualizadas las cantidades de los productos en la
+                página web. Para ello, propone llevar un registro de las
+                existencias y actualizar las cantidades después de
+                registrar una compra.
+            </p>
+
+            <h4>Objetivo principal</h4>
+
+            <p>
+                Mejorar el control de los productos disponibles,
+                reducir errores en el inventario y ofrecer información
+                más confiable a los clientes de Lova.
+            </p>
+        </section>
+
+       
+        <section class="seccion-bloque">
+            <h3>¿Quiénes utilizarán el sistema?</h3>
+
+            <p>
+                El sistema será utilizado principalmente por las
+                personas encargadas de administrar el inventario
+                y por los programadores responsables de su desarrollo
+                y mantenimiento. Los clientes se beneficiarán al
+                consultar información más actualizada sobre los productos.
+            </p>
+        </section>
+
+
+
+    
+<button type="button" id="btn-reiniciar-sistema" class="btn-enviar">
+    Reiniciar todo el sistema
+</button>
+
+
+
+
+        
+        <section class="seccion-bloque">
+            <h3>Inventario de productos</h3>
+
+            <p>
+                Consulta los productos registrados, sus precios y las
+                cantidades iniciales disponibles en el archivo de administración de Lova.
+            </p>
+
+            <div class="tabla-inventario-contenedor">
+                <table class="tabla-inventario">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Producto</th>
+                            <th>Precios</th>
+                            <th>Existencias</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabla-inventario">
+                        <tr>
+                            <td>P001</td>
+                            <td>Cuerda para bondage</td>
+                            <td>₡9.000</td>
+                            <td>15</td>
+                            <td>Disponible</td>
+                        </tr>
+
+                        <tr>
+                            <td>P002</td>
+                            <td>Collares y Gargantillas BDSM</td>
+                            <td>₡12.000</td>
+                            <td>10</td>
+                            <td>Disponible</td>
+                        </tr>
+
+                        <tr>
+                            <td>P003</td>
+                            <td>Vela corporal</td>
+                            <td>₡15.000</td>
+                            <td>18</td>
+                            <td>Disponible</td>
+                        </tr>
+
+                        <tr>
+                            <td>P004</td>
+                            <td>Lubricante base agua</td>
+                            <td>₡6.500</td>
+                            <td>25</td>
+                            <td>Disponible</td>
+                        </tr>
+
+                        <tr>
+                            <td>P005</td>
+                            <td>Aceites para masaje</td>
+                            <td>₡9.000</td>
+                            <td>12</td>
+                            <td>Disponible</td>
+                        </tr>
+
+                        <tr>
+                            <td>P006</td>
+                            <td>Venda para ojos</td>
+                            <td>₡5.000</td>
+                            <td>20</td>
+                            <td>Disponible</td>
+                        </tr>
+
+                        <tr>
+                            <td>P007</td>
+                            <td>Esposas de tela</td>
+                            <td>₡7.000</td>
+                            <td>14</td>
+                            <td>Disponible</td>
+                        </tr>
+
+                        <tr>
+                            <td>P008</td>
+                            <td>Perfume de Feromonas</td>
+                            <td>₡12.500</td>
+                            <td>16</td>
+                            <td>Disponible</td>
+                        </tr>
+
+                        <tr>
+                            <td>P009</td>
+                            <td>Lencería Roleplay</td>
+                            <td>₡15.000</td>
+                            <td>22</td>
+                            <td>Disponible</td>
+                        </tr>
+
+                        <tr>
+                            <td>P010</td>
+                            <td>Conjunto Lencería Encaje</td>
+                            <td>₡15.000</td>
+                            <td>25</td>
+                            <td>Disponible</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+
+
+<section class="seccion-bloque">
+    <h3>Registrar nuevos productos</h3>
+    <p>Completa los datos para agregar un producto al inventario.</p>
+
+    <form id="form-registro-producto">
+        <div class="campo-grupo">
+            <label for="nuevo-codigo">Código del producto:</label>
+            <input type="text" id="nuevo-codigo" placeholder="Ej. P011" required>
+        </div>
+
+        <div class="campo-grupo">
+            <label for="nuevo-nombre">Nombre del producto:</label>
+            <input type="text" id="nuevo-nombre" required>
+        </div>
+
+        <div class="campo-grupo">
+            <label for="nuevo-precio">Precio de venta (₡):</label>
+            <input type="number" id="nuevo-precio" min="1" step="1" required>
+        </div>
+
+        <div class="campo-grupo">
+            <label for="nuevo-stock">Existencias iniciales:</label>
+            <input type="number" id="nuevo-stock" min="0" step="1" required>
+        </div>
+
+        <button type="submit" class="btn-enviar">
+            Registrar producto
+        </button>
+    </form>
+</section>
+
+
+<section class="seccion-bloque">
+    <h3>Registrar clientes</h3>
+    <p>Ingresa la información básica del cliente.</p>
+
+    <form id="form-registro-cliente">
+        <div class="campo-grupo">
+            <label for="cliente-cedula">Cédula o identificación:</label>
+            <input type="text" id="cliente-cedula" required>
+        </div>
+
+        <div class="campo-grupo">
+            <label for="cliente-nombre">Nombre completo:</label>
+            <input type="text" id="cliente-nombre" required>
+        </div>
+
+        <div class="campo-grupo">
+            <label for="cliente-telefono">Teléfono:</label>
+            <input type="tel" id="cliente-telefono" required>
+        </div>
+
+        <div class="campo-grupo">
+            <label for="cliente-correo">Correo electrónico:</label>
+            <input type="email" id="cliente-correo" required>
+        </div>
+
+        <button type="submit" class="btn-enviar">
+            Registrar cliente
+        </button>
+    </form>
+
+    <h4>Clientes registrados</h4>
+    <div class="tabla-inventario-contenedor">
+        <table class="tabla-inventario">
+            <thead>
+                <tr>
+                    <th>Identificación</th>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-clientes"></tbody>
+        </table>
+    </div>
+</section>
+
+
+<section class="seccion-bloque">
+    <h3>Reportes del sistema</h3>
+    <p>Consulta el resumen de las ventas y del inventario registrado.</p>
+
+    <div class="funciones-grid">
+        <div class="tarjeta-funcion">
+            <h4>Ventas registradas</h4>
+            <p id="reporte-cantidad-ventas">0</p>
+        </div>
+
+        <div class="tarjeta-funcion">
+            <h4>Ingresos acumulados</h4>
+            <p id="reporte-ingresos">₡0</p>
+        </div>
+
+        <div class="tarjeta-funcion">
+            <h4>Unidades disponibles</h4>
+            <p id="reporte-existencias">0</p>
+        </div>
+
+        <div class="tarjeta-funcion">
+            <h4>Productos agotados</h4>
+            <p id="reporte-agotados">0</p>
+        </div>
+    </div>
+
+    <h4>Historial de ventas</h4>
+    <div class="tabla-inventario-contenedor">
+        <table class="tabla-inventario">
+            <thead>
+                <tr>
+                    <th>Número de venta</th>
+                    <th>Fecha</th>
+                    <th>Productos y cantidades</th>
+                    <th>Total pagado</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-ventas"></tbody>
+        </table>
+    </div>
+</section>
+
+
+        
+        <section class="seccion-bloque cotizador-seccion">
+            <h2>Cotizador LovaStock</h2>
+
+            <p class="descripcion-sistema">
+                Selecciona un producto del catálogo, ajusta la cantidad
+                y consulta el cálculo de tu cotización.
+            </p>
+
+            <div class="cotizador-grid">
+
+                <div class="form-cotizador">
+                    <div class="campo-grupo">
+                        <label for="select-producto">
+                            Seleccionar producto:
+                        </label>
+
+                        <select id="select-producto">
+                            <option value="" data-precio="0"
+                                data-img="img/Logo.jpeg">
+                                -- Seleccione un producto --
+                            </option>
+
+                            <option value="Cuerda para bondage"
+                                data-precio="9000"
+                                data-img="img/Producto1.png">
+                                Cuerda para bondage - ₡9.000
+                            </option>
+
+                            <option value="Collares y Gargantillas BDSM"
+                                data-precio="12000"
+                                data-img="img/Producto2.png">
+                                Collares y Gargantillas BDSM - ₡12.000
+                            </option>
+
+                            <option value="Vela corporal"
+                                data-precio="15000"
+                                data-img="img/Producto3.png">
+                                Vela corporal - ₡15.000
+                            </option>
+
+                            <option value="Lubricante base agua"
+                                data-precio="6500"
+                                data-img="img/Producto4.png">
+                                Lubricante en base de agua - ₡6.500
+                            </option>
+
+                            <option value="Aceites para masaje"
+                                data-precio="9000"
+                                data-img="img/Producto5.png">
+                                Aceites para masaje - ₡9.000
+                            </option>
+
+                            <option value="Venda para ojos"
+                                data-precio="5000"
+                                data-img="img/Producto6.png">
+                                Venda para los ojos - ₡5.000
+                            </option>
+
+                            <option value="Esposas de tela"
+                                data-precio="7000"
+                                data-img="img/Producto7.png">
+                                Esposas de tela - ₡7.000
+                            </option>
+
+                            <option value="Perfume de Feromonas"
+                                data-precio="12500"
+                                data-img="img/Producto8.png">
+                                Perfume de Feromonas - ₡12.500
+                            </option>
+
+                            <option value="Lencería Roleplay"
+                                data-precio="15000"
+                                data-img="img/Producto9.png">
+                                Lencería Roleplay - ₡15.000
+                            </option>
+
+                            <option value="Conjunto Lencería Encaje"
+                                data-precio="15000"
+                                data-img="img/Producto10.png">
+                                Conjunto de Lencería de Encaje - ₡15.000
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="input-cantidad">Cantidad:</label>
+
+                        <input type="number"
+                            id="input-cantidad"
+                            min="1"
+                            value="1">
+                    </div>
+                </div>
+
+                <div class="resultado-cotizacion">
+
+                    <div class="preview-card">
+                        <img id="preview-img"
+                            src="img/Logo.jpeg"
+                            alt="Vista previa del producto"
+                            class="img-dinamica">
+
+                        <h4 id="preview-nombre">
+                            Ningún producto seleccionado
+                        </h4>
+
+                        <p id="preview-precio">
+                            Precio unitario: ₡0
+                        </p>
+                    </div>
+
+                    <div class="detalle-calculo">
+                        <h4>Resumen de cotización</h4>
+
+                        <p>
+                            Subtotal:
+                            <span id="res-subtotal">₡0</span>
+                        </p>
+
+                        <p>
+                            Descuento automático:
+                            <span id="res-descuento">₡0</span>
+                        </p>
+
+                        <p>
+                            IVA (13%):
+                            <span id="res-iva">₡0</span>
+                        </p>
+
+                        <hr>
+
+                        <p class="total-final">
+                            Total a pagar:
+                            <span id="res-total">₡0</span>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            
+
+            <div class="btn-ocultar-container">
+                <button type="button"
+                    id="btn-toggle-info"
+                    class="btn-secundario">
+                    Mostrar / Ocultar notas de discreción
+                </button>
+
+                <div id="info-discrecion"
+                    class="info-oculta"
+                    style="display: none; margin-top: 10px;">
+
+                    <p>
+                        <strong>Garantía de envío discreto:</strong>
+                        Los paquetes se preparan para proteger la
+                        privacidad de los clientes, utilizando
+                        empaques neutrales.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <section class="prototipo">
+    <h2>Prototipo del sistema LovaStock</h2>
+
+    <div class="galeria-prototipo">
+
+        <div class="pantalla-prototipo">
+            <img src="img/prototipo/slide1.png"
+                 alt="Pantalla 1 del prototipo de LovaStock">
+            <h3>1. Inicio de sesión</h3>
+        </div>
+
+        <div class="pantalla-prototipo">
+            <img src="img/prototipo/slide2.png"
+                 alt="Pantalla 2 del prototipo de LovaStock">
+            <h3>2. Panel principal</h3>
+        </div>
+
+        <div class="pantalla-prototipo">
+            <img src="img/prototipo/slide3.png"
+                 alt="Pantalla 3 del prototipo de LovaStock">
+            <h3>3. Menú principal</h3>
+        </div>
+
+        <div class="pantalla-prototipo">
+            <img src="img/prototipo/slide4.png"
+                 alt="Pantalla 4 del prototipo de LovaStock">
+            <h3>4. Registro</h3>
+        </div>
+
+        <div class="pantalla-prototipo">
+            <img src="img/prototipo/slide5.png"
+                 alt="Pantalla 5 del prototipo de LovaStock">
+            <h3>5. Consulta de inventario</h3>
+        </div>
+
+        <div class="pantalla-prototipo">
+            <img src="img/prototipo/slide6.png"
+                 alt="Pantalla 6 del prototipo de LovaStock">
+            <h3>6. Modificación de producto</h3>
+        </div>
+
+        <div class="pantalla-prototipo">
+            <img src="img/prototipo/slide7.png"
+                 alt="Pantalla 7 del prototipo de LovaStock">
+            <h3>7. Eliminación o desactivación </h3>
+        </div>
+
+        <div class="pantalla-prototipo">
+            <img src="img/prototipo/slide8.png"
+                 alt="Pantalla 8 del prototipo de LovaStock">
+            <h3>8. Reportes</h3>
+        </div>
+
+    </div>
+</section>
+
+
+    <footer>
+        <p>Lova © 2026. Todos los derechos reservados.</p>
+        <p>Correo: Lovasexshop@gmail.com</p>
+        <p>Redes sociales: @lovasexshop</p>
+    </footer>
+
+</body>
+</html>
