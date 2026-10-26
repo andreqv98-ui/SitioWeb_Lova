@@ -867,7 +867,7 @@ button:hover {
     background: #16101c;
 }
 
-/
+
 .tabla-inventario tbody tr:hover {
     background: #30203a;
     transition: background 0.2s ease;
@@ -1046,4 +1046,18 @@ button:hover {
     .prototipo {
         padding: 20px 15px;
     }
+}
+
+.enlace-login {
+    background-color: #e8a0bf;
+    color: #211a29 !important;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.enlace-login:hover {
+    background-color: #f2c6d4;
 }
