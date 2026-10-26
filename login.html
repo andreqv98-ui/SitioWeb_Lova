@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lova - Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="Logo">
+                <img src="img/Logo.jpeg" alt="Logo">
+                <h1>LOVA</h1>
+                <p>Tu bienestar íntimo, con la discreción y confianza que mereces</p>
+            </div>
+        </nav>
+    </header>
+    
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="productos.html">Productos</a>
+        <a href="sistema.html">Sistema</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <br>
+
+    <main class="contacto-container">
+        <section class="seccion-bloque">
+            <h2>Iniciar Sesión</h2>
+            <p class="descripcion-contacto">Ingresa tus credenciales autorizadas para gestionar el sistema LovaStock.</p>
+            
+       
+<div class="aviso-mayoria-edad">
+    🔞 <strong>Acceso exclusivo para mayores de edad</strong>
+    <p>
+        Este sitio contiene productos destinados a personas adultas.
+        Debes tener al menos 18 años para continuar.
+    </p>
+
+    <label class="confirmacion-edad">
+        <input type="checkbox" id="confirmar-edad">
+        Confirmo que tengo 18 años o más.
+    </label>
+</div>
+
+            <form id="formLogin" class="form-contacto">
+                <div class="campo-grupo">
+                    <label for="login-correo">Correo electrónico:</label>
+                    <input type="email" id="login-correo" required placeholder="lovasexshop@gmail.com">
+                </div>
+                
+                <div class="campo-grupo">
+                    <label for="login-password">Contraseña:</label>
+                    <input type="password" id="login-password" required placeholder="********">
+                </div>
+
+                <p id="error-login" style="color: #ff2a85; font-size: 13px; display: none; margin-bottom: 10px;">Correo o contraseña incorrectos.</p>
+
+                <button type="submit" class="btn-enviar">Entrar al Sistema</button>
+            </form>
+        </section>
+    </main>
+
+    <div id="btn-carrito-flotante" class="carrito-flotante">
+        🛒 <span id="contador-carrito">0</span>
+    </div>
+
+   
+    <div id="modal-carrito" class="carrito-modal" style="display: none;">
+        <div class="carrito-contenido">
+            <span id="cerrar-carrito" class="cerrar-modal">&times;</span>
+            <h3>Tu Carrito Lova</h3>
+            
+            <div id="lista-carrito-items">
+                <p>El carrito está vacío.</p>
+            </div>
+            
+            <div class="carrito-resumen">
+                <p>Subtotal: <span id="car-subtotal">₡0</span></p>
+                <p>Descuento: <span id="car-descuento">₡0</span></p>
+                <p>IVA (13%): <span id="car-iva">₡0</span></p>
+                <hr>
+                <p class="car-total-final">Total: <span id="car-total">₡0</span></p>
+                
+                <div class="carrito-botones">
+                    <button id="btn-seguir-comprando" class="btn-secundario">Continuar comprando</button>
+                    <button id="btn-finalizar-pedido" class="btn-enviar">Finalizar Pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Lova © 2026. Todos los derechos reservados.</p>
+        <p>Correo: lovasexshop@gmail.com</p>
+        <p>Redes sociales: @lovasexshop</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
